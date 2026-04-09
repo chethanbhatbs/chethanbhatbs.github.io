@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chethan Bhat — Projects & Tools</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--green:#3fb950;--purple:#bc8cff;--orange:#f0883e}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;line-height:1.6}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+
+.container{max-width:960px;margin:0 auto;padding:40px 20px}
+header{text-align:center;margin-bottom:48px}
+header h1{font-size:2.2em;font-weight:700;margin-bottom:8px}
+header p{color:var(--muted);font-size:1.1em;margin-bottom:16px}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.badges a{background:var(--card);border:1px solid var(--border);padding:6px 14px;border-radius:20px;font-size:.85em;color:var(--text);transition:border-color .2s}
+.badges a:hover{border-color:var(--accent);text-decoration:none}
+
+.section{margin-bottom:48px}
+.section h2{font-size:1.5em;font-weight:600;margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card h3{font-size:1.1em;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.card p{color:var(--muted);font-size:.9em;margin-bottom:12px}
+.card .meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.tag{font-size:.75em;padding:3px 8px;border-radius:12px;font-weight:500}
+.tag-js{background:rgba(247,223,30,.15);color:#f7df1e}
+.tag-ts{background:rgba(49,120,198,.15);color:#58a6ff}
+.tag-html{background:rgba(227,76,38,.15);color:#f0883e}
+.tag-skill{background:rgba(188,140,255,.15);color:var(--purple)}
+.tag-ext{background:rgba(63,185,80,.15);color:var(--green)}
+
+.btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;font-size:.82em;font-weight:500;transition:background .2s}
+.btn-outline{border:1px solid var(--border);color:var(--text)}.btn-outline:hover{background:var(--border);text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff;border:none}.btn-primary:hover{opacity:.9;text-decoration:none}
+.btn-install{background:rgba(63,185,80,.12);color:var(--green);border:1px solid rgba(63,185,80,.3)}.btn-install:hover{background:rgba(63,185,80,.22);text-decoration:none}
+
+.install-cmd{background:#0d1117;border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-family:'SF Mono',Monaco,monospace;font-size:.8em;color:var(--green);margin-top:10px;position:relative;cursor:pointer;overflow-x:auto;white-space:nowrap}
+.install-cmd:hover{border-color:var(--green)}
+.install-cmd::after{content:'click to copy';position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:.7em;color:var(--muted);font-family:-apple-system,sans-serif}
+
+footer{text-align:center;color:var(--muted);font-size:.85em;margin-top:48px;padding-top:24px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Chethan Bhat</h1>
+  <p>QA Engineer &bull; AI Agent Evals &bull; Builder</p>
+  <div class="badges">
+    <a href="https://github.com/chethanbhatbs">GitHub</a>
+    <a href="https://www.linkedin.com/in/chethan-bhat-535b0a212/">LinkedIn</a>
+    <a href="mailto:bschethanbhat@gmail.com">Email</a>
+  </div>
+</header>
+
+<!-- APPS -->
+<div class="section">
+  <h2>Apps & Tools</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Chrome Pilot <span class="tag tag-ext">Extension</span></h3>
+      <p>Chrome extension for tab management — focus mode, profiles, auto-close, timeline tracking.</p>
+      <div class="meta">
+        <span class="tag tag-js">JavaScript</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/chrome-pilot">View Repo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>JSON Diff</h3>
+      <p>Compare and diff two JSON objects side-by-side with syntax highlighting.</p>
+      <div class="meta">
+        <span class="tag tag-js">JavaScript</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/json_diff">View Repo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CMS</h3>
+      <p>Content Management System for creating and managing web content.</p>
+      <div class="meta">
+        <span class="tag tag-js">JavaScript</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/CMS">View Repo</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+  <h2>Claude Code Skills</h2>
+  <p style="color:var(--muted);margin-bottom:16px;font-size:.92em">Custom skills for <a href="https://claude.ai/claude-code">Claude Code</a>. Click the install command to copy it.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Token Saver</h3>
+      <p>Reduce token usage without losing functionality — targeted reads, model switching, context management.</p>
+      <div class="meta">
+        <span class="tag tag-skill">Skill</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/token-saver-skill">Repo</a>
+      </div>
+      <div class="install-cmd" onclick="copyCmd(this)">gh repo clone chethanbhatbs/token-saver-skill ~/.claude/skills/token-saver</div>
+    </div>
+
+    <div class="card">
+      <h3>History Viewer</h3>
+      <p>Browse past Claude Code conversations in a searchable, filterable HTML interface.</p>
+      <div class="meta">
+        <span class="tag tag-skill">Skill</span>
+        <span class="tag tag-html">HTML + Python</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/history-viewer-skill">Repo</a>
+      </div>
+      <div class="install-cmd" onclick="copyCmd(this)">gh repo clone chethanbhatbs/history-viewer-skill ~/.claude/skills/history-viewer</div>
+    </div>
+
+    <div class="card">
+      <h3>Organize</h3>
+      <p>Sort Downloads, organize screenshots by month, flag duplicates and large files on your laptop.</p>
+      <div class="meta">
+        <span class="tag tag-skill">Skill</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/organize-skill">Repo</a>
+      </div>
+      <div class="install-cmd" onclick="copyCmd(this)">gh repo clone chethanbhatbs/organize-skill ~/.claude/skills/organize</div>
+    </div>
+
+    <div class="card">
+      <h3>Self-Improve</h3>
+      <p>Auto-retro after every task — captures mistakes and patterns so Claude gets smarter over time.</p>
+      <div class="meta">
+        <span class="tag tag-skill">Skill</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/self-improve-skill">Repo</a>
+      </div>
+      <div class="install-cmd" onclick="copyCmd(this)">gh repo clone chethanbhatbs/self-improve-skill ~/.claude/skills/self-improve</div>
+    </div>
+
+    <div class="card">
+      <h3>Learnings</h3>
+      <p>Capture and document what you learned from any task — tools, concepts, and insights.</p>
+      <div class="meta">
+        <span class="tag tag-skill">Skill</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/learnings-skill">Repo</a>
+      </div>
+      <div class="install-cmd" onclick="copyCmd(this)">gh repo clone chethanbhatbs/learnings-skill ~/.claude/skills/learnings</div>
+    </div>
+
+    <div class="card">
+      <h3>Help</h3>
+      <p>List all installed custom skills with descriptions, usage examples, and file paths.</p>
+      <div class="meta">
+        <span class="tag tag-skill">Skill</span>
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/help-skill">Repo</a>
+      </div>
+      <div class="install-cmd" onclick="copyCmd(this)">gh repo clone chethanbhatbs/help-skill ~/.claude/skills/help</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- LEARNING -->
+<div class="section">
+  <h2>Learning</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Git Journey</h3>
+      <p>Learning Git and GitHub — branching, merging, PRs, collaboration workflows.</p>
+      <div class="meta">
+        <a class="btn btn-outline" href="https://github.com/chethanbhatbs/git-journey">View Repo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Built by Chethan Bhat &bull; <a href="https://github.com/chethanbhatbs">github.com/chethanbhatbs</a></p>
+</footer>
+
+</div>
+
+<script>
+function copyCmd(el){
+  const text=el.textContent.replace('click to copy','').trim();
+  navigator.clipboard.writeText(text).then(()=>{
+    const orig=el.style.borderColor;
+    el.style.borderColor='#3fb950';
+    el.setAttribute('data-after',el.style.getPropertyValue('--after'));
+    const after=el.querySelector('::after');
+    el.dataset.copied='true';
+    setTimeout(()=>{el.style.borderColor=orig;delete el.dataset.copied},1500);
+  });
+}
+</script>
+</body>
+</html>
